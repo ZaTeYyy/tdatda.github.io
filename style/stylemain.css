@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Caramel&display=swap');
+/* ----------------------------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* aside{
+    position: fixed;
+} */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #222;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+title{
+    background-color: #222;
+}
+
+.header_main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* height: 5000px; */
+    background-color: aliceblue;
+    padding-bottom: 50px;
+    margin-top: 50px;
+}
+
+.header_main>div>p{
+    padding-left: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.linia2{
+    margin-top: -9px;
+    border:2px solid gainsboro;
+}
+
+.header_main>h2{
+    font-size: 20pt;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+
+.header_main>p{
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 14pt;
+}
+
+.header_main>img{
+    align-self: center;
+    width: 50%;
+}
+
+.header_main>ol{
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.header_main>ol>ul{
+    padding: 5px;
+    padding-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.a{
+    text-align: center;
+}
+
+.header_main>video{
+    width: 60%;
+    align-self: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer>div{
+    border-top: 1px solid #FFFFFF;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-right: 10px;
+}
+
+footer>div p{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: -0.5px;
+    color: #FFFFFF;
+}
+.ppt {
+    display: flex;
+    padding-bottom: 40px;
+    justify-content: center;
+}
+
+.button{
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
+}

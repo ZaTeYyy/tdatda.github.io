@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Caramel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #6161FA;
+}
+
+
+header>div{
+    height: 50px;
+    background-color: #6161FA;
+    position: fixed;
+    z-index: 5;
+    border-bottom: 1px solid #fff;
+}
+
+.header-menu{
+    display: none;
+}
+.header-menu button{
+    width: 30px;
+    height: 30px;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: none;
+    display: none;
+}
+
+#header-menu {
+    position: fixed;
+    right: 2%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    gap: 10px;
+}
+
+#header-menu div {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    box-shadow: 0px 0px 5px #222;
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+    border: 2px solid #222;
+    background-color: #6161FA;
+}
+
+#header-menu div a{
+    font-size: 20pt;
+    padding-bottom: 10px;
+}
+
+#header-menu div {
+    transition: 0.3s ease;
+}
+
+/* Панель справа навигация  */
+#header-menu div:visited, #header-menu div:hover {
+    background-color: #7274FE;
+}
+
+#header-menu .active, #header-menu .active:valid{
+    background-color: #0B51C5;
+}
+
+#header-menu .active, #header-menu .active:hover{
+    background-color: #0B51C5;
+}
+
+#header-menu div:visited, #header-menu div:hover {
+    transform: scale(0.98);
+    /* Scaling button to 0.98 to its original size */
+    transition: all 0.2s;
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    /* Lowering the shadow */
+}
+
+
+.logotip{
+    /* position: fixed; */
+    z-index: 2;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    color:cornflowerblue;
+    display: flex;
+    text-shadow: black 0 0 1px;
+}
+
+
+.logotip> .freelancer{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    color: #54ad54;
+    padding-top: 10px;
+}
+
+.color-logotip{
+    font-weight: normal;
+    color: white;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    padding-top: 10px;
+}
+
+
+main {
+    display: flex;
+}
+
+main>.glava{
+    position: fixed;
+    height: 200px;
+    /* width: 200px; */
+    background: #6161FA;
+    padding-top: 50px;
+    /* height: 2000px; */
+    height: 100%;
+    width: 16%;
+    background-color: #6161FA;
+    padding-bottom: 200px;
+}
+
+.box-clear{
+    padding-top: 40px;
+}
+
+div>a{
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    text-decoration: none;
+    padding: 10px;
+}
+.oglava>p{
+    padding: 10px 15px 10px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+.optglava>p{
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    text-decoration: none;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    font-weight: bold;
+    padding-left: 20px;
+    border-top: none;
+    margin-bottom: 10px;
+}
+
+.optglava>p:first-child{
+    border-top: 1px solid white;
+}
+
+.optglava>div{
+    padding: 5px;
+}
+
+.block-menu>a:hover{
+    background-color: green;
+}
+/* Боковая панель при наведении */
+.optglava>div:hover{
+    color: green;
+    background-color: #7274FE;;
+    transition:grey 10ms ease;
+}
+
+.optglava>div:active {
+    transform: scale(0.98);
+    /* Scaling button to 0.98 to its original size */
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    /* Lowering the shadow */
+}
+
+.optglava>div:hover {
+    transform: scale(0.98);
+    /* Scaling button to 0.98 to its original size */
+    transition: all 0.2s;
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    /* Lowering the shadow */
+}
+
+.side-panel>div:visited{
+    color: green;
+    background-color: #346834;
+    transition:rgb(20, 215, 13) 10ms ease;
+}
+.active, .active:visited{
+    background-color: #0B51C5;
+}
+.optglava>.active:hover{
+    color: green;
+    background-color: #0B51C5;
+    transition:grey 10ms ease;
+}
+a{
+    display: block;
+}
+
+.header_main b{
+    font-style: italic;
+    font-size: 24px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.side-button-1-wr{
+    display: none;
+}
+
+.side-button-2 {
+    display: none;
+}
+
+#side-checkbox{
+    display: none;
+}
+.freelancer{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    color: #54ad54;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.logotip span{
+    font-weight: normal;
+    color: white;
+}
+
