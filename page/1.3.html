@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/styleaside.css">
+    <link rel="stylesheet" href="../style/stylemain.css">
+    <link rel="stylesheet" href="../style/stylecode.css">
+    <link rel="stylesheet" href="../style/stylemedia.css">
+    <title>Условия</title>
+  </head>
+  <body>
+    <header>
+        <div class="logotip">
+            <img src="../img/эмблема1.png"> <a href="/page/index.html" class="freelancer">STEP<span>APT</span></a>
+        </div>
+        <div class="side-button-1-wr">
+            <label class="side-button-1" for="side-checkbox">
+                <div class="side-b side-open">
+                    <img src="/img/bars.png" alt="">
+                </div>
+                <div class="side-b side-close">
+                    <img src="/img/bars.png" alt="">
+                </div>
+            </label>
+        </div>
+        <div class="header-menu">
+            <button id="header-menu_1" onclick="document.getElementById('header-menu').style.display='flex'; document.getElementById('header-menu_1').style.display='none'; document.getElementById('header-menu_2').style.display='flex';" style="display:none;">❔</button>
+            <button id="header-menu_2" onclick=" document.getElementById('header-menu').style.display='none'; document.getElementById('header-menu_2').style.display='none'; document.getElementById('header-menu_1').style.display='flex';">❔</button>
+        </div>
+    </header>
+    <div class="fan"></div>
+    <div class="linia1"></div>
+    <main>
+        <input type="checkbox" id="side-checkbox" />
+        <div class="side-panel">
+            <aside class="glava">
+                <div class="oglava">
+                    <p>"Поколение Python": курс для начинающих</p>
+                </div>
+                <div class="optglava">
+                    <label class="side-button-2" for="side-checkbox">
+                        <img src="/img/close_48124.png" alt="">
+                    </label>  
+                    <p>1 Операторы. Переменные. Типы данных. Условия</p>
+                    <div  title="Переменные. Стандартный ввод/вывод"><a href="1.1.html">1.1 Переменные. Станда...</a></div>
+                    <div  title="1.2 Логические операции, операции сравнения"><a href="1.2.html">1.2 Логические операции...</a></div>
+                    <div class="active" title="1.3 Условия: if, else, elif. Блоки, отступы"><a href="1.3.html">1.3 Условия: if, else, elif...</a></div>
+                    <div title="1.4 Строки"><a href="1.4.html">1.4 Строки</a></div>
+                </div>
+                <div class="optglava"><p>2  Циклы. Строки. Списки</p>
+                    <div title="2.1 Цикл while"><a href="2.1.html">2.1 Цикл while</a></div>
+                    <div title="2.2 Операторы break, continue"><a href="2.2.html">2.2 Операторы break, co...</a></div>
+                    <div title="2.3 Цикл for"><a href="2.3.html">2.3 Цикл for</a></div>
+                    <div title="2.4 Строки и символы"><a href="2.4.html">2.4 Строки и символы</a></div>
+                    <div title="2.5 Списки"><a href="2.5.html">2.5 Списки</a></div>
+                </div>
+                <div class="optglava"><p>3  Функции. Словари. Интерпретатор. Файлы. Модули.</p>
+                    <div title="3.1 Функции"><a href="3.1.html">3.1 Функции</a></div>
+                    <div title="3.2 Словари"><a href="3.2.html">3.2 Словари</a></div>
+                    <div title="3.3 Множества"><a href="3.3.html">3.3 Множества</a></div>
+                    <div title="Дополнительные материалы"><a href="pptx.html">Дополнительные материалы</a></div>
+                    <div title="Главная страница"><a href="general.html">Вернуться на главную</a></div>
+                </div>
+            </aside>         
+        </div> 
+        <div class="header_main">
+            <div id="header-menu">
+                <div class="active"><a href="#">❔</a></div>
+                <div ><a href="1.3_1.html">⌨</a></div>
+                <div ><a href="1.3_2.html">⌨</a></div>
+            </div>
+            <h1>1.3 Условия: if, else, elif. Блоки, отступ</h1>
+            <h2>Условия</h2>
+            <hr>
+            <video src="../video/1.3.MP4" controls></video>
+            <p>Условные конструкции позволяют делать ваш код более гибким и “послушным”, направляя команды программе в зависимости от того, что она получает, или того, как меняются переменные в ходе ее выполнения. Ключевыми словами в подобной команде являются if (“если”) и else (“иначе”). Используется она так:</p>
+            <code>
+                <span class="blue-text">if</span> condition: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;statements1 <br>
+                <span class="blue-text">else</span>:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;statements2
+            </code>
+            <p>где condition – это проверяемое условие, после которого идет двоеточие, означающее определение нового блока кода (заметим, что условие не обязательно писать в круглых скобках, как в некоторых других языках), а statements1 — команды, которые выполняются при соблюдении данного условия. Если же условие оказалось неверным, выполняются команды statements 2, определенные в блоке else. </p>
+            <p>В языке Python, чтобы выделить команды, относящиеся к определенному блоку, используют отступы. Обычно разработчики используют 4 пробела или один знак табуляции как наиболее визуально удобный подход, но технически вы можете использовать любое количество пробелов (главное, одинаковое количество на программу). В других языках программирования (например, C/C++, Java, PHP, JavaScript) такое также применяется, однако вместо двоеточия команды, относящиеся к блоку, заключаются в фигурные скобки, а вот в языке Pascal используются ключевые слова begin и end. </p>
+            <p>В свою очередь, в одном блоке может содержаться бесчисленное множество блоков, в каждом из которых могут содержатся собственные блоки программного кода. Схематично это выглядит так:</p>
+            <code>
+                <span class="blue-text">if</span> condition1: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="blue-text">if</span> condition2: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="blue-text">if</span> condition3: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;statements3 <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;statements2 <br>
+                statements1
+            </code>
+            <p>Как видите, отступы делают программу удобочитаемой. Это всегда очень важно, ведь к своему коду вы можете возвращаться не раз, а исправить баг или добавить новую “фичу” в неряшливый код бывает довольно трудно. То же касается и ситуаций, когда вы работаете в команде, и ваш код будут просматривать ваши коллеги.</p>
+            <h2>Ключевое слово elif</h2>
+            <p>Мы уже говорили о том, что Python довольно лаконичный язык. Действительно, многие вещи в нем можно написать гораздо проще, чем в других языках. Рассмотрим пример. Допустим, нам нужно проанализировать введенное число, сравнив его с числом десять.</p>
+            <code>
+                n = int(input()) <br>
+                <span class="blue-text">if</span> n < 10: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;print(<span class="green-text">"Число меньше десяти"</span>) <br>
+                <span class="blue-text">else:</span> <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="blue-text">if</span> n == 10: <br>
+                print(<span class="green-text">"Число равно десяти")</span> <br>
+                <span class="blue-text">else:</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="blue-text">if</span> n > 100: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(<span class="green-text">"Число намного больше десяти"</span>) <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="blue-text">else:</span> <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(<span class="green-text">"Число больше десяти"</span>)
+            </code>
+            <p>В итоге, для такой простой проверки понадобилось несколько вложенных друг в друга кусков кода, которые могут выглядеть довольно отталкивающе. К тому же, если бы нам понадобилось больше, чем три-четыре различные ситуации, код стал бы похож на лесенку, уходящую в бесконечность. Любой Python разработчик сказал бы, что этот код выглядит ужасно. Попробуем улучшить его с помощью команды elif. По названию можно догадаться, что elif соединяет в себе слова else и if и делает код более кратким. Посмотрим, что у нас получилось:</p>
+            <code>
+                n = int(input()) <br>
+                <span class="blue-text">if</span> n < 10: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;print(<span class="green-text">"Число меньше десяти"</span>) <br>
+                <span class="blue-text">elif</span> n == 10: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;print(<span class="green-text">"Число равно десяти"</span>) <br>
+                <span class="blue-text">elif</span> n > 100: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;print(<span class="green-text">"Число намного больше десяти"</span>) <br>
+                <span class="blue-text">else</span>: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;print(<span class="green-text">"Число больше десяти"</span>)
+            </code>
+            <h2>Логические операторы</h2>
+            <p>Часто бывает, что необходимо проверить больше одного условия за раз. Чтобы избежать лишней вложенности, используют логические операторы: and, or и not. Рассмотрим использование каждого из них на примерах:</p>
+            <p>1. Написать “YES”, если длина строки text равна 42 или строка равна строке “Python”.</p>
+            <code>
+                <span class="blue-text">if</span> len(text) == 42 or text == <span class="green-text">"Python"</span>: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;print(<span class="green-text">"YES"</span>)
+            </code>
+            <p>2. Написать “YES”, если число n шестизначное и при этом последняя цифра равна 2.</p>
+            <code>
+                <span class="blue-text">if</span> 10 ** 5 <= n < 10 ** 6 and n % 10 == 2: <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;print(<span class="green-text">"YES"</span>)
+            </code>
+            <p>3. Написать “right_choice”, если неверно, что строка language_to_choose равна “PHP” или равна “JavaScript”. Обратите внимание на скобки в примере. Это значит, что отрицание берется на все выражение в скобках, идущее после слова not.</p>
+            <code>
+                <span class="blue-text">if</span> not (language_to_choose == <span class="green-text">"PHP"</span> or language_to_choose == <span class="green-text">"JavaScript"</span>): <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;print(<span class="green-text">"right_choice"</span>)
+            </code>
+            <p>Очевидно, с помощью комбинаций логических операторов (не забывайте про скобки) можно писать сколь угодно сложные условия.</p>
+            <h2>Тернарный оператор</h2>
+            <p>В Python также существует возможность еще больше сократить проверку условия — буквально в одну строку. Делается это так:</p>
+            <code>
+                a = int(input()) <br>
+                b = int(input()) <br>
+                res = <span class="green-text">"Число а больше"</span> <span class="blue-text">if</span> a > b <span class="blue-text">else</span> <span class="green-text">"Число b больше"</span>
+            </code>
+            <p>В общем виде тернарный оператор выглядит так:</p>
+            <code>
+                x = value1 <span class="blue-text">if</span> condition <span class="blue-text">else</span> value2
+            </code>
+            <p>где value1 и value2 — это переменные, которые “кладутся” в x при выполнении или невыполнении условия. Заметим, что в тернарном операторе нет места elif, так что использовать этот оператор стоит в однозначных случаях. В нашем примере, если числа равны, в переменную res сохранится строка, содержащая фактологическую ошибку.</p>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p>STEPAPT   Группа ИС-213, Валиахметов Д.Р., Яруллин Т.Р., v.2022</p>
+        </div>
+    </footer>
+  </body>
+</html>
